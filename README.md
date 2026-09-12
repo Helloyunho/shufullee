@@ -1,6 +1,6 @@
 # Shufullee
 
-Generate a playlist of songs with a specific duration.
+Generate a playlist of songs with a specific duration
 
 ## How it works
 

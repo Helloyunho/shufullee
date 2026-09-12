@@ -1,0 +1,3 @@
+APPLE_KEY_ID=
+APPLE_TEAM_ID=
+APPLE_SECRET_KEY= # This should be a base64 encoded string of the private key

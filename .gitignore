@@ -32,3 +32,6 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+
+# please pnpm im not using monorepo so stop making workspace.yaml
+pnpm-workspace.yaml

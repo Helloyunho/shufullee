@@ -153,6 +153,9 @@ export function App () {
           ))}
         </div>
       )}
+      <p className='text-sm text-muted-foreground'>
+        Made by <a href='https://helloyunho.xyz' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>Helloyunho</a>. <a href='https://github.com/helloyunho/shufullee' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>GitHub</a>
+      </p>
     </div>
   )
 }

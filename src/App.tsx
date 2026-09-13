@@ -153,7 +153,7 @@ export function App () {
                   </div>
                 </div>
               </div>
-              <a href={song.url} target='_blank' rel='noopener noreferrer' className={buttonVariants()}>
+              <a href={song.url} target='_blank' rel='noopener noreferrer' className={buttonVariants({ size: 'icon' })}>
                 <LinkIcon className='size-4' />
               </a>
             </div>

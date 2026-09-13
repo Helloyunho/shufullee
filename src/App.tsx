@@ -134,6 +134,7 @@ export function App () {
       </div>
       {playlist && (
         <div className='w-full max-w-4xl'>
+          <p className='text-sm text-muted-foreground text-center'>Duration: {Math.floor(playlist.totalDuration / 1000)}s</p>
           {playlist.playlist.map((song) => (
             <div className='flex items-center justify-between p-4 hover:bg-accent transition-colors border-b last:border-b-0 first:rounded-t-2xl last:rounded-b-2xl' key={song.id}>
               <div className='flex items-center gap-4'>

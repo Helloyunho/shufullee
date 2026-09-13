@@ -90,7 +90,7 @@ const generatePlaylistWithTargetDuration = (data: AppleMusicSong[], targetDurati
     if (currDuration > targetDuration - 1 && currDuration < targetDuration + 1) {
       break
     }
-    const result = generatePlaylistWithTargetDuration(data, targetDuration, currDuration, new Set([...ignoreIds, id].slice(0, Math.floor(data.length / 3))))
+    const result = generatePlaylistWithTargetDuration(data, targetDuration, currDuration, new Set([id, ...ignoreIds].slice(0, Math.floor(data.length / 3))))
     if (result.length > 0) {
       playlist.push(...result)
       break

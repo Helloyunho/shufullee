@@ -5,6 +5,7 @@ import { Field, FieldError, FieldLabel } from '@/components/ui/field'
 import { Input } from '@/components/ui/input'
 import { StorefrontCombobox, StorefrontLoading } from '@/components/storefront'
 import { GenreCombobox, GenreLoading } from '@/components/genre'
+import { toast } from '@/components/ui/toast'
 
 interface Playlist {
   id: string
@@ -55,7 +56,12 @@ export function App () {
       const data: PlaylistResponse = await resp.json()
       setPlaylist(data)
     } catch (error) {
-      console.error('Error generating playlist:', error)
+      toast.add({
+        title: 'Could not generate playlist. Please try again later.',
+        description: 'If the problem persists, please leave an issue on GitHub with browser console logs.',
+        type: 'error'
+      })
+      console.error(error)
     } finally {
       setIsGenerating(false)
     }

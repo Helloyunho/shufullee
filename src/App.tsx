@@ -105,7 +105,7 @@ export function App () {
           </Suspense>
         </Field>
         <Field data-invalid={referencePlaylistInvalid}>
-          <FieldLabel htmlFor='reference'>Reference Playlist URL (optional)</FieldLabel>
+          <FieldLabel htmlFor='reference'>Reference Apple Music Playlist URL (optional)</FieldLabel>
           <Input
             id='reference'
             value={referencePlaylist ?? ''}
